@@ -1,0 +1,26 @@
+SOLVER:
+  BATCH_SIZE: 128
+  MAX_EPOCH: 20
+  LR: 2e-4
+  SEED: 600
+
+DRUG:
+  FRAG_NODE_DIM: 167
+
+DECODER:
+  BINARY: 4
+
+protein_encode:
+  input: "prottrans"
+  encoder: "LA"
+
+RESULT:
+  OUTPUT_DIR: "./result/residual_protein_conditioned_gate/finetune_from_fragment_graph_epoch62_20ep"
+
+PROTEIN_LA:
+  conv_embeddings_dim: 1044
+  NUM_FILTERS: [128]
+  EMBEDDING_DIM: 128
+  dropout: 0.25
+  KERNEL_SIZE: 9
+  PADDING: True
